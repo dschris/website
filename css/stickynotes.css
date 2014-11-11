@@ -6,7 +6,7 @@
     margin:0px auto 20px auto;
     margin-top:0px;
     margin-bottom:20px;
-    margin-left:0px;
+    margin-left:auto;
     width:250px;
     /*height:300px; */
     font:20px'Helvetica', cursive;
@@ -22,32 +22,16 @@
     -moz-box-shadow:    3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow:         3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     overflow:hidden;
-    transition: all 0.5s ease;
     font-smoothing:subpixel-antialiased;
     max-width:520px;
     /*max-height:400px;*/
 }
-.stickynote:hover {
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow:    5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow:         5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    margin-left:-5px;
-    margin-top:-5px;
-    margin-bottom:25px;
-    width: 260px;
-    padding-left:30px;
-    padding-right:30px;
-}
-.stickynote:focus {
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow:    5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow:         5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    outline:none;
-}
+
+
 .stickynote>.button {
     position:relative;
-    top:40px;
-    opacity:0;
+    top:10px;
+    opacity:1;
     -webkit-transition: opacity 0.5s, top 0.5s ease-in;
     -moz-transition: opacity 0.5s, top 0.5s ease-in;
     transition: opacity 0.5s, top 0.5s ease-in;
@@ -61,13 +45,7 @@
     margin:0 auto;
     width:60px
 }
-.stickynote:hover .button {
-    top:10px;
-    opacity:1;
-    -webkit-transition: opacity 0.5s, top 0.5s ease-out;
-    -moz-transition: opacity 0.5s, top 0.5s ease-out;
-    transition: opacity 0.5s, top 0.5s ease-out;
-}
+
 .stickynote>p {
     text-align:center;
 }
@@ -88,4 +66,41 @@
     background-image: url('/images/tape.png');
     background-position: center;
     background-size: 100%;
+}
+
+@media (min-width:700px){
+  .stickynote{
+    margin-left:0px;
+  }
+  .stickynote:hover {
+      -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow:    5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      box-shadow:         5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      margin-left:-5px;
+      margin-top:-5px;
+      margin-bottom:25px;
+      width: 260px;
+      padding-left:30px;
+      padding-right:30px;
+      transition: all 0.5s ease;
+  }
+  .stickynote:focus {
+      -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow:    5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      box-shadow:         5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+      outline:none;
+      transition: all 0.5s ease;
+
+  }
+  .stickynote:hover .button {
+      top:10px;
+      opacity:1;
+      -webkit-transition: opacity 0.5s, top 0.5s ease-out;
+      -moz-transition: opacity 0.5s, top 0.5s ease-out;
+      transition: opacity 0.5s, top 0.5s ease-out;
+  }
+  .stickynote>.button {
+      opacity:0;
+      top:40px;
+  }
 }

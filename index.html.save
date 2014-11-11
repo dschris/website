@@ -1,0 +1,283 @@
+j<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>Christopher Harrsch</title> 
+	<meta name="description" content="Computer Engineer - NJIT" />	    
+	<!--<meta name="keywords" content="christopher, harrsch, NJIT, computer, engineering">-->
+	<meta property="og:title" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="prefetch" href="images/zoom.png">
+		
+</head>
+
+<body>
+	<div class="navbar navbar-fixed-top" data-activeslide="1">
+		<div class="container"> 
+		
+			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav row">
+					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">ABOUT ME</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-camera"></span> <span class="text">GALLERY</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">PROJECTS</span></a></li>
+					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">INTERESTS</span></a></li>
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a></li>
+				</ul>
+				<div class="row">
+					<div class="col-sm-2 active-menu"></div>
+				</div>
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</div><!-- /.navbar -->
+	
+	
+	<!-- === Arrows === -->
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+	</div><!-- /.arrows -->
+	
+	
+	<!-- === MAIN Background === -->
+	<div class="slide story" id="slide-1" data-slide="1">
+		<div class="container">
+			<div id="home-row-1" class="row clearfix">
+				<div class="col-12">
+					<h1 class="font-semibold">CHRISTOPHER<span class="font-thin"> HARRSCH</span></h1>
+					<h4 class="font-thin">I am a <span class="font-semibold">Computer Engineering </span> major at the New Jersey Institute of Technology.</h4>
+				</div><!-- /col-12 -->
+			</div><!-- /row -->
+			<div id="home-row-2" class="row clearfix">
+				 <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><i class="icon icon-user" style="color:#cfcfcf;"></i></div><span>ABOUT ME</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><i class="fa fa-gears" style="color:#cfcfcf;"></i></div><span>PROJECTS</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="6"><i class="icon icon-envelope" style="color:#cfcfcf;"></i></div><span>CONTACT</span></div> 
+				<br>
+				<br>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide1 -->
+	
+	<!-- === Slide 2 === -->
+	<div class="slide story" id="slide-2" data-slide="2">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin">About <span class="font-semibold">Me</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-12 font-thin">I'm an enthusiastic engineer who loves a cool problem that gets my hands dirty. My engineering abilities extend directly from my personal hobbies including computer, automotive, and marine work that have given me outlets to experiment with new ideas. I have a passion for the design as well as the installation of my ideas and see my projects through to the end. Flip through my project portfolio on this site to see some of my past work!</div>
+			</div><!-- /row -->
+			<div class="row content-row">
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="fa fa-group"></i></p>
+					<h2 class="font-thin">Problem <span class="font-semibold">Solving</span></h2>
+					<h4 class="font-thin">Working collaboratively to create unique solutions to complex problems.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="fa fa-gears"></i></p>
+					<h2 class="font-thin" style="height:70px;">Dynamic <span class="font-semibold">Engineering</span></h2>
+					<h4 class="font-thin">Designing tailored integrated systems for all use cases.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-eye-open"></i></p>
+					<h2 class="font-thin">Smart <span class="font-semibold">Systems</span></h2>
+					<h4 class="font-thin">Self-aware hardware solutions that increase efficiency.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="fa fa-leaf"></i></p>
+					<h2 class="font-thin">Eco <span class="font-semibold">Driven</span></h2>
+					<h4 class="font-thin">Creative power solutions for minimized energy costs.</h4>
+				</div><!-- /col12 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide2 -->
+	
+	<!-- === SLide 3 - Portfolio -->
+	<div class="slide story" id="slide-3" data-slide="3">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/airconditioner.jpg"><img class="thumb" src="images/portfolio/airconditioner.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/ArduinoLEDtest.jpg"><img class="thumb" src="images/portfolio/ArduinoLEDtest.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/boatalternator.jpg"><img class="thumb" src="images/portfolio/boatalternator.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/carswitch.jpg"><img class="thumb" src="images/portfolio/carswitch.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/carswitch2.jpg"><img class="thumb" src="images/portfolio/carswitch2.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/explorermotorswap.jpg"><img class="thumb" src="images/portfolio/explorermotorswap.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/explorermotorswap2.jpg"><img class="thumb" src="images/portfolio/exlporermotorswap2.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/midairrefueling.jpg"><img class="thumb" src="images/portfolio/midairrefueling.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/serverprecase.jpg"><img class="thumb" src="images/portfolio/serverprecase.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/phonevibrate.jpg"><img class="thumb" src="images/portfolio/phonevibrate.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/midairrefueling2.jpg"><img class="thumb" src="images/portfolio/midairrefueling2.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/SLI.jpg"><img class="thumb" src="images/portfolio/SLI.jpg" alt=""></a></div>
+		</div><!-- /row -->
+	</div><!-- /slide3 -->
+	
+	<!-- === Slide 4 - Process === -->
+	<div class="slide story" id="slide-4" data-slide="4">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">Projects</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row content-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2 project" style="width:100%; text-align:left;">
+					<div class="col-12 col-sm-2" style="width:55%">
+						<img class="projectImg" src="images/portfolio/carswitch.jpg">
+					</div>
+					<div class="col-12 col-sm-2" style="width:45%;">
+						<h2 class="projectTitle font-semibold">5-Port 12V Car Switch</h2>
+						<h3 class="projectDesc font-thin">After adding my CB radio and interior LED kit amoung other devices, I found myself running short on 12V outlets for the Explorer. After finding this switch panel I decided it would fit the job perfectly and set to work. </h3>
+						<br>
+						<a href="projects/project1.html" target="_blank" class="btn btn-primary btn-lg">More</a>
+					</div>
+				</div><!-- /col12 -->
+
+				<div class="col-12 col-sm-2 project" style="width:100%;text-align:right;">
+					<div class="col-12 col-sm-2" style="width:45%;">
+						<h2 class="projectTitle font-semibold">Project 2</h2>
+						<h3 class="projectDesc font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+						<br>
+						<a href="#" class="btn btn-primary btn-lg">More</a>
+					</div>
+					<div class="col-12 col-sm-2" style="width:55%">
+						<img class="projectImg" src="http://placehold.it/500x250">
+					</div>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide4 -->
+	
+	<!-- === Slide 5 === -->
+	<div class="slide story" id="slide-5" data-slide="5">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">Interests</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row content-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2">
+					<p><i class="fa fa-globe"></i></p>
+					<h2 class="font-thin">History & Politics</h2>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="fa fa-gear"></i></p>
+					<h2 class="font-thin">Mountain Biking</h2>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="fa fa-camera"></i></p>
+					<h2 class="font-thin">Photography</h2>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="fa fa-volume-up"></i></p>
+					<h2 class="font-thin">Audio</h2>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="fa fa-wrench"></i></p>
+					<h2 class="font-thin">Automotive</h2>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide5 -->
+	
+	<!-- === Slide 6 / Contact === -->
+	<div class="slide story" id="slide-6" data-slide="6">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-light">Leave me a <span class="font-semibold">message</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">You can contact me however you'd like, just push a button and I'm there.</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+			<div id="contact-row-4" class="row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-phone"></i></a></p>
+					<span class="hover-text font-light ">(973) 897-7944</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
+					<span class="hover-text font-light ">chris@harrsch.net</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-home"></i></a></p>
+					<span class="hover-text font-light ">Newark, New Jersey<br>Zip Code 07103</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
+					<span class="hover-text font-light ">facebook.com/<br>christopher.harrsch</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
+					<span class="hover-text font-light ">@DSChris</span></a>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /Slide 6 -->
+	
+</body>
+
+	<!-- SCRIPTS -->
+	<script src="js/html5shiv.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- fancybox init -->
+	<script>
+	$(document).ready(function(e) {
+		var lis = $('.nav > li');
+		menu_focus( lis[0], 1 );
+		
+		$(".fancybox").fancybox({
+			padding: 10,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+	
+	});
+	</script>
+
+</html>

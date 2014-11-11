@@ -1,4 +1,11 @@
-
+ /*
+ * Author: Christopher Harrsch
+ * Contributing Authors: Joseph Parrinello, Matthew Lavine
+ * Version: Who knows
+ * Purpose: Create a stylesheet that utilizes CSS3 to make sticky notes for
+ * projects and their descriptions with a thumbnail.
+ * URL: chrisharrsch.com
+ */
 .stickynote {
     color:black;
     display: block;

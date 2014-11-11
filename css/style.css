@@ -1,13 +1,18 @@
 /*
+ * Author: Christopher Harrsch
+ * Contributing Authors: Joseph Parrinello, Matthew Lavine
+ * Version: Who knows
+ * URL: chrisharrsch.com
+ *
+ * This website (chrisharrsch.com) was built
+ * using the following template:
+ * 
  * Original Template Author: Carlos Alvarez
  * URL: http://alvarez.is
- *
  * Project Name: Munter - Free Bootstrap 3 Theme
  * Version: 1.0
  * URL: http://blacktie.co
- *
- * Author: Christopher Harrsch
- * URL: chris.harrsch.net;
+ *===============================================
  */
 
  .project {
@@ -232,7 +237,7 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url('../images/bg1.jpg');
+    background-image: url('../images/bg1webfriendly.jpg');
 
 
     -webkit-background-size: cover;
@@ -257,7 +262,6 @@ body {
 }
 
 #slide-1 {
-	/*background-image: url('../images/bg1.jpg'); Now in html */
 	color: #ffffff;
     width: 100%;
 }

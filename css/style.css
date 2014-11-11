@@ -249,11 +249,11 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 
-   /* -webkit-filter: blur(6px);
+    -webkit-filter: blur(6px);
     -moz-filter: blur(6px);
     -o-filter: blur(6px);
     -ms-filter: blur(6px);
-    filter: blur(6px); */
+    filter: blur(6px);
 }
 
 #slide-1 {
@@ -470,7 +470,8 @@ body {
 #slide-4 {
 	background-image: url('../images/corkboard.jpg');
 	/*background-color: #34495e;*/
-	color: #e4e6e5;
+	/*color: #e4e6e5;*/
+	color: black;
 	padding-top: 90px;
 }
 

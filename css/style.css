@@ -434,7 +434,7 @@ body {
 	}
 }
 
-#slide-3 {
+/*#slide-3 {
 	background-color: #000;
 	margin: 0 auto;
 	overflow: hidden;
@@ -489,7 +489,7 @@ body {
 	#slide-3 .col-12 {
 		width: 100%;
 	}
-}
+}*/
 
 #slide-4 {
 	background-image: url('../images/corkboard.jpg');
@@ -554,6 +554,7 @@ body {
 	}
 
 	#contact-row-4 img {
+		-webkit-border-radius: 50%;
 		display: block;
 		margin: 0 auto;
 		max-height: 100%;
@@ -589,7 +590,7 @@ body {
 .with-hover-text span {
 	display: none;
 }
-
+/*
 .zoom {
 	background-image: url('../images/zoom.png');
 	background-position: center center;
@@ -662,6 +663,7 @@ body {
 #arrow-right.disabled {
 	background-position: 0 -90px;
 }
+*/
 
 .navigation-slide {
 	cursor: pointer;

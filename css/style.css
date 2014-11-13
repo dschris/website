@@ -248,11 +248,11 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 
-    -webkit-filter: blur(6px);
+    /*-webkit-filter: blur(6px);
     -moz-filter: blur(6px);
     -o-filter: blur(6px);
     -ms-filter: blur(6px);
-    filter: blur(6px);
+    filter: blur(6px);*/
 }
 
 #slide-1 {
@@ -549,7 +549,7 @@ body {
 	}
 
 	#contact-row-4 img {
-		-webkit-border-radius: 50%;
+		border-radius: 50%;
 		display: block;
 		margin: 0 auto;
 		max-height: 100%;

@@ -35,11 +35,6 @@ footer {
   width:100%;
 }
 
-.story-img {
-  margin-top:25%;
-  display:block;
-}
-
 a,a:hover {
   color:#223344;
   text-decoration:none;
@@ -87,7 +82,7 @@ a,a:hover {
 
 .panel .lead {
   overflow:hidden;
-  height:90px;
+  height:40px;
 }
 
 .label-float{

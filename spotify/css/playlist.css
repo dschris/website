@@ -47,8 +47,9 @@ body {
 
 .thumbnail {
 /*  cursor: pointer;*/
-    background-color: #fff;
+    background-color: #677077;
     padding: 0;
+/*    box-shadow: 5px 5px 15px #FFF;*/
 }
 
 .thumbnail .caption-full {

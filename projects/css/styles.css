@@ -4,14 +4,37 @@
 
 body {
   padding-top:50px;
-  background-color:#ABADB0;
+  background-color:#C5935E;
 }
 
 footer {
-  margin-top:40px;
-  padding-top:40px;
   padding-bottom:40px;
   background-color:#ededed;
+}
+footer p{
+  text-align: center;
+}
+
+img {
+      border: 1px solid #ddd;
+}
+
+p {
+  font-size:12pt;
+  text-align: justify;
+}
+
+h3 {
+  margin-top:0px
+}
+
+.panel {
+    box-shadow: 0 0 6px #ccc;
+    border: 0;
+}
+
+.col-md-5 {
+  padding-left: 0px
 }
 
 #masthead {
@@ -95,7 +118,7 @@ a,a:hover {
   padding:6px;
   color:#fff;
 }
-    
+
 .btn-twitter {background-color:#4099FF;color:#fff;}
 .btn-facebook {background-color:#3B5998;color:#fff;}
 .btn-google-plus {background-color:#d34836;color:#fff;}

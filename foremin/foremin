@@ -1,0 +1,136 @@
+#!/bin/bash
+
+#####################################
+#-----------Foremin v0.1------------#
+# Developed by Christopher Harrsch  #
+# First cup of coffe was Feb 4 2017 #
+#       www.chrisharrsch.com        #
+#####################################
+
+
+start (){
+
+server=$1
+rammax=$2
+rammin=$3
+
+	if [[ "$#" -lt 3 ]]; then
+		echo "Not enough args for start."
+		echo "Proper syntax is $(basename $0) start [serverName] [maxram] [minram]."
+		echo
+		exit 2
+	fi
+
+	cd $server && java -Xmx${rammax}G -Xms${rammin}G -jar *.jar nogui
+
+}
+
+create (){
+	
+server=$1
+version=$2
+
+	if [[ "$#" -lt 2 ]]; then
+		echo "Not enough args for create."
+		echo "Proper syntax is $(basename $0) create [serverName] [version]."
+		echo
+		exit 3
+	fi
+
+	mkdir $server
+	cd $server && wget https://s3.amazonaws.com/Minecraft.Download/versions/${version}/minecraft_server.${version}.jar
+}
+
+mod (){
+
+server=$1	
+targetVar=$2
+newData=$3
+
+	if [[ "$#" -lt 3 ]]; then
+		echo "Not enough args for mod."
+		echo "Proper syntax is $(basename $0) mod [serverName] [targetVariable] [newData]."
+		echo
+		exit 4
+	fi
+
+	case $targetVar in
+
+		port)
+			cd $server && sed -i "s/server-port=.*/server-port=${newData}/g" server.properties
+			;;	
+		motd)
+
+			cd $server && sed -i "s/motd=.*/motd=${newData}/g" server.properties
+			;;	
+		*)
+			echo "Unrecognized target variable."	
+			;;
+	esac
+
+	#eval "$server $targetVar"
+}
+
+eval (){
+
+server=$1
+targetVar=$2
+
+	if [[ "$#" -lt 2 ]]; then
+		echo "Not enough args for eval."
+		echo "Proper syntax is $(basename $0) mod [serverName] [targetVariable]."
+		echo
+		exit 5
+
+	fi
+
+	cd $server && grep $targetVar server.properties
+}
+
+update(){
+	echo "Please wait while Foremin acquires the latest version..."
+	mv foremin foremin.old
+	wget http://www.chrisharrsch.com/foremin/foremin
+	rm foremin.old
+	chmod +x foremin
+}
+
+help (){
+	echo "Command format is ./launch \$SERVER \$MAXRAM \$MINRAM"
+	echo "RAM values are interpreted as gigabytes."
+}
+
+main () {
+
+	command=$1
+	shift
+
+	case $command in
+
+	create)
+		create "$@"
+		;;
+	start)
+		start "$@"
+		;;
+	mod)
+		mod "$@"
+		;;
+	eval)
+		eval "$@"
+		;;
+	update)
+		update "$@"
+		;;
+	help)
+		help "$@"
+		#Need to write idiomatic help
+		;;
+	*)
+		help "$@"
+		#Should point to "usage" function
+		;;
+	esac
+}
+
+main "$@"

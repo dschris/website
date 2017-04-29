@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IoT Insecurity - Chris Harrsch </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Blog Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- Extra Meme Bar -->
+		<!--
+		<ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="post.html">Sample Post</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+		-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/server.jpeg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>IoT Insecurity</h1>
+                        <h2 class="subheading">The Internet of Things may include more "Things" than you initially expected.</h2>
+                        <span class="meta">Posted by <a href="../index.html">Christopher Harrsch</a> on April 24, 2017</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    			<p>The Internet of Things is a highly popular topic in technology, even for consumers who may not be technically savvy. The concept is exciting; devices that can use inputs such as sensors and buttons to modify our environments and share that information with other devices to improve quality of life and convenience. While the technology is highly applicable, it comes with many concerns that may not be getting as much attention as they deserve. The idea that an internet of things is separate from the internet is a folly.</p> 
+
+<p>This array of devices some may understand as components of a smart home, like a Nest thermostat, a baby monitor, security cameras, or “smart” lightbulbs. The theme is that there is a computer in everything and that in doing so, machines and devices can carry out their traditional functionalities as well as having an increase in automation, the addition of remote control and surveillance, and even some machine learning.  The truth however is that this goes much farther than what many may conceive. Bruce Schneier in his address to the House of Representatives’ Energy & Commerce Committee put it best: “I want to suggest another way of thinking about it in that everything is now a computer: This is not a phone. It’s a computer that makes phone calls. A refrigerator is a computer that keeps things cold. [An] ATM machine is a computer with money inside. Your car is not a mechanical device with a computer. It’s a computer with four wheels and an engine… And this is the Internet of Things.”</p>
+
+<p>In Schneier’s more accurate and sombering definition of the Internet of Things, we are faced with some serious consequences. Schneier continues, “The Internet of Things affects the world in a direct and physical manner: cars, appliances, thermostats, airplanes. There’s real risk to life and property.  There’s real catastrophic risk.” On Black Friday, November 25, 2016, San Francisco's Municipal Transportation Agency was the victim of a crypto-ransomware attack. The malware infected ticketing services for the city’s trains, as well as systems that managed the city’s bus routes. For that Friday and Saturday, the trains operated at no cost and bus drivers were given hand-written route assignments. Ultimately, this attack was benign. San Francisco MTA lost some ticket revenue, but thankfully had backups of their system and was able to re-image their machines by the end of the weekend. Even more fortunately, the ticketing and route management services were separated from the infrastructure that physically manages the trains.</p>
+
+<p>I think it is remarkable to note that San Francisco’s MTA was not an intended target of the Mamba ransomware. It was an accidental target triggered by an employee opening a malicious email. In ransomware campaigns like Mamba, a “bad actor” compromises a system, usually as the result of an authorized user executing the malware. The ransomware then encrypts a user’s data and asks for money to decrypt it. More sophisticated ransomware will destroy data when it detects intervention such as recovery attempts. These campaigns are alarmingly successful, and were estimated to net almost $1 billion in 2016.</p> 
+
+<p>The other important note to make of the Mamba incident was that it was both crafted and deployed by a single human. This is an important distinction from the type of cyberattack I would like to highlight next, the October 21, 2016 DDOS attack on Dyn. First, DDOS is an acronym standing for a Distributed Denial-of-Service attack. Basically, this is like a bunch of siblings yelling “Mom!” until mom gets overwhelmed and stops answering them. Except in the real world, the siblings are every device on the internet, and mom is a server. Many serious internet companies have impressive server infrastructure that can handle a mind-boggling amount of requests and connections at lightning speed. As a result, there has been considerable investment in technology crossing both hardware and software that goes into mitigating these extraordinary numbers of connections; and these are the honest ones.</p>
+
+<p>However, just because companies do their best to prevent overload, it doesn’t mean there isn’t an upper limit. Attackers can exploit this boundary to take a website or service down, whether it’s to cause a negative economic impact, they don’t like you, or just because they can. The Internet of Things has become a waiting arsenal for malicious attackers to carry out these kinds of attacks, and on October 21, 2016 we saw the scale at which these types of attacks can be successful against Dyn’s Managed DNS service. DNS stands for Domain Name Service, the internet’s analogous phonebook. Dyn offers a service that provides the aforementioned mitigation of downtime in the event of high-traffic events. However, Dyn was given a run for their money.</p>
+
+<p>During this DDOS attack, a botnet driven by malware known as Mirai orchestrated a tremendous international assault on their servers. Dyn sustained requests from hundreds of millions of infected machines, known once infected as bots. The botnet launched two massive assaults on their servers, triggering outages across the world for major websites like Amazon and Twitter. Once again though, this attack was mostly benign; a couple of websites went down. But this attack was deployed by compromised consumer routers, security cameras, light bulbs, and the like. And not only can these devices be duped into being attackers, they are first the attacked. And even for the savvy, defense isn’t easy; a  $55 security camera available on Amazon was compromised by Mirai after being online for only 98 seconds.</p>
+
+<p>So what does this mean? The Internet of Things has given us new technology and new functionality at an impressive rate. We want it and we want it now. To cash in, countless of offshore “companies” are answering the demand. But what they’re providing isn’t on par with the more battle tested devices in our ecosystem. “Our computers are secure for a bunch of reasons. The engineers at Google, Apple, Microsoft spent a lot of time on this. But that doesn’t happen for these cheaper devices. … These devices are a lower price margin, they’re offshore, there’s no teams. And a lot of them cannot be patched. Those DVRs are going to be vulnerable until someone throws them away. And that takes a while. We get security [for phones] because I get a new one every 18 months. Your DVR lasts for five years, your car for 10, your refrigerator for 25. I’m going to replace my thermostat approximately never.”</p>
+
+<p>In the security technology industry, exploits are considered inevitable. Indeed, some can be much more embarrassing than others; for example, Amazon accidently taking down their web services with a typo. But the real judgement is placed on how you respond to an exploit. It is not uncommon for white-hat (ethical) hackers from security research firms to submit exploits to companies in order for them to fix them. Typically, companies with good understanding and management will have these exploits patched in days, if not hours. White hat hackers usually give a company a certain amount of time, like 90 days, to issue a patch before they go public with the exploit as a way to force better security practices across the industry.</p>
+
+<p>The more devices, the more exploits. And with these offshore products, there’s little liability for selling an insecure device. This gives hackers the advantage. Black hat (unethical) hackers can quickly find exploits that exist on cheap hardware that is used in a multitude of internet-connected devices, and in doing so give themselves access to an army of bots to do their bidding. Some of these exploits are called Zero Days, which refers to an exploit that is unreported and therefore a company has had zero days to patch it. Zero Days sell for hundreds of thousands of dollars on the dark web.</p>
+
+<p>It’s been cautioned by Schneier and others that for many of these reasons, the market may not be able to fix this. Like many new technologies that became prominent in the 20th century, a government agency may need to be formed to help create standards and ultimately protect consumers and critical infrastructure. Schneier himself admits that he doesn’t want this. The internet is fun, and letting software developers and technology companies build these technologies the way they saw fit was exciting. But maybe it’s time the era of internet fun and games is over, and as we rely on it as one of our most critical pieces of infrastructure, we are now charged to protect it.</p>
+
+                    
+                </div><!-- This is the end of the post -->
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.twitter.com/dschris">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Christopher Harrsch 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
